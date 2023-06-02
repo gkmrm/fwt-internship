@@ -1,0 +1,113 @@
+@import './src/styles/_variables';
+
+.Select {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 700px;
+  min-width: 160px;
+  height: 44px;
+  border-radius: $border-radius-add;
+  box-shadow: 0px 0px 0px 1px black;
+  color: $main-color-dark;
+  box-sizing: border-box;
+  background: $main-color-light;
+  cursor: pointer;
+  font-size: $fonr-size-medium;
+  transition: $transition;
+
+  &--open {
+    border-radius: 8px 8px 0 0;
+  }
+  &--dark {
+    box-shadow: 0px 0px 0px 1px white;
+    color: $main-color-light;
+    background: $main-color-dark;
+  }
+  &__title {
+    max-width: calc(100% - 61px);
+    word-break: break-all;
+    margin: 0 0 0 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    white-space: nowrap;
+    font-size: $font-size-normal;
+  }
+  &__optionContainer {
+    display: block;
+    position: absolute;
+    width: calc(100%);
+    box-shadow: 0px 0px 0px 1px black;
+    border-radius: $border-radius-add;
+    top: 45px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    z-index: 1;
+    background: $main-color-light;
+    font-weight: $font-weight-medium;
+
+    &--open {
+      border-radius: 0 0 8px 8px;
+      max-height: 300px;
+    }
+    &--dark {
+      box-shadow: 0px 0px 0px 1px white;
+      background: $main-color-dark;
+    }
+  }
+  &__option {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: calc(100%);
+    box-sizing: border-box;
+    padding: 0 15px;
+
+    &:hover {
+      background: $main-color-dark;
+      color: $main-color-light;
+    }
+    &--dark {
+      &:hover {
+        background: $main-color-light;
+        color: $main-color-dark;
+      }
+    }
+    &:last-of-type {
+      border-radius: 0 0 8px 8px;
+    }
+  }
+  &__optionName {
+    word-break: break-word;
+  }
+  &__arrow {
+    position: absolute;
+    display: flex;
+    right: 18px;
+    float: right;
+    fill: #b3b3b3;
+  }
+  .reset {
+    position: absolute;
+    display: flex;
+    float: right;
+    right: 28px;
+    transition-duration: 0.8s;
+    transition-property: transform;
+    user-select: none;
+    z-index: 100;
+    &:hover {
+      transform: rotate(360deg);
+    }
+    &__icon {
+      width: 8px;
+      height: 8px;
+      margin: 10px 10px;
+    }
+  }
+}
