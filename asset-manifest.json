@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/fwt-internship/static/css/main.f48bee02.css",
+    "main.css": "/fwt-internship/static/css/main.8a7214e7.css",
     "main.js": "/fwt-internship/static/js/main.375013ac.js",
     "static/media/iconDarkTheme.svg": "/fwt-internship/static/media/iconDarkTheme.50072ad1e802aa3ed87fd217cc55ea6b.svg",
     "static/media/iconLightTheme.svg": "/fwt-internship/static/media/iconLightTheme.403f581a5acb220ed1371178ff780034.svg",
@@ -14,11 +14,11 @@
     "static/media/selectArrow.svg": "/fwt-internship/static/media/selectArrow.e857798522b0dfc8f3430ad40052fcaf.svg",
     "static/media/dashForRange.svg": "/fwt-internship/static/media/dashForRange.43e465c68c0f6af0db10138aa17d9dee.svg",
     "static/media/dashForRangeDark.svg": "/fwt-internship/static/media/dashForRangeDark.f1d09a9722e7baf57a444afe09e8519e.svg",
-    "main.f48bee02.css.map": "/fwt-internship/static/css/main.f48bee02.css.map",
+    "main.8a7214e7.css.map": "/fwt-internship/static/css/main.8a7214e7.css.map",
     "main.375013ac.js.map": "/fwt-internship/static/js/main.375013ac.js.map"
   },
   "entrypoints": [
-    "static/css/main.f48bee02.css",
+    "static/css/main.8a7214e7.css",
     "static/js/main.375013ac.js"
   ]
 }
