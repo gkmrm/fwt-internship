@@ -1,0 +1,66 @@
+@import './src/styles/_variables';
+
+.Range {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 767px;
+  width: 100%;
+  line-height: 15px;
+  height: 45px;
+  border: 1px solid black;
+  background: $main-color-light;
+  color: $main-color-dark;
+  border-radius: $border-radius-add;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: $font-size-normal;
+  transition: $transition;
+  &--dark {
+    border: 1px solid white;
+    background: $main-color-dark;
+    color: $main-color-light;
+  }
+  &--open {
+    border-bottom: none;
+    border-radius: 8px 8px 0 0;
+  }
+  &__title {
+    margin: 14px 0 15px 14px;
+  }
+  &__arrow {
+    position: absolute;
+    display: flex;
+    right: 18px;
+    float: right;
+    fill: #b3b3b3;
+  }
+  &__сontainer {
+    display: block;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    max-width: 767px;
+    width: calc(100% + 2px);
+    top: 43px;
+    border: 1px solid black;
+    padding: 20px 22px;
+    box-sizing: border-box;
+    border-radius: 0 0 8px 8px;
+    background: $main-color-light;
+    z-index: 1;
+    font-size: $fonr-size-medium;
+    &--dark {
+      border: 1px solid white;
+      background: $main-color-dark;
+      color: $main-color-light;
+    }
+    &--open {
+      border-top: none;
+      display: flex;
+    }
+  }
+}
