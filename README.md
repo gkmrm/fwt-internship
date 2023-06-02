@@ -1,12 +1,14 @@
-## Available Scripts
+## Картинная галерея
+Выполнено по заданию.
 
-In the project directory, you can run:
+Deploy: https://gkmrm.github.io/fwt-internship/
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-### `npm test`
-
-### `npm run build`
+## Реализовано:
+1) Вёрстка по макету + адаптивность
+2) Интеграция стороннего API
+3) Сделано на React + TypeScript + MobX + CRA
+4) Добавлен eslint и prettier
+5) Везде использован scss
+6) Реализована смена темы(БЕЗ сохранения между сеансами)
+7) Вся фильтрация осуществляется запросами к серверу(реализована фильтрация по авторам, локации картины, названию и году создания)
+8) Реализована пагинация
