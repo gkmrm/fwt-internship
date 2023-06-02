@@ -1,0 +1,12 @@
+@import './src/styles/_variables';
+
+.message {
+  border: 1px solid $main-color-light;
+  border-radius: $border-radius-main;
+  padding: 16px;
+  font-size: 45px;
+  text-align: center;
+  margin: 100px auto;
+  background-color: $additional-color;
+  color: $main-color-dark;
+}
