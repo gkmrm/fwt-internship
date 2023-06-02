@@ -1,0 +1,9 @@
+@import './src/styles/_variables';
+
+html,
+body,
+#root {
+  margin: 0;
+  font-family: $font-family;
+  box-sizing: border-box;
+}
