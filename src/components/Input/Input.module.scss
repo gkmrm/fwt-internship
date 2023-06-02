@@ -1,0 +1,34 @@
+@import './src/styles/_variables';
+
+.input {
+  box-sizing: border-box;
+  max-width: 700px;
+  min-width: 95px;
+  height: 45px;
+  border: solid 1px;
+  border-radius: $border-radius-add;
+  font-size: $font-size-normal;
+  padding-left: 10px;
+  font-family: $font-family;
+  transition: $transition;
+
+  &:focus {
+    outline: none;
+    border-color: $additional-color;
+  }
+
+  &.input_disabled {
+    opacity: 0.6;
+    background: #f9f9f9;
+    cursor: not-allowed;
+  }
+
+  &.dark {
+    border-color: $main-color-light;
+    color: $main-color-light;
+  }
+  &.light {
+    border-color: $main-color-dark;
+    color: $main-color-dark;
+  }
+}
