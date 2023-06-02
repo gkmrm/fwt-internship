@@ -1,0 +1,60 @@
+@import './src/styles/_variables';
+
+.light {
+  background-color: $main-color-light;
+  transition: $transition;
+  min-height: 100vh;
+}
+
+.dark {
+  background-color: $main-color-dark;
+  transition: $transition;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding-bottom: 97px;
+}
+
+.loader {
+  margin: 100px auto;
+}
+
+@media screen and (max-width: 1365px) {
+  .container {
+    margin: 0 42px;
+    padding-bottom: 62px;
+  }
+}
+
+@media screen and (min-width: 1204px) {
+  .container {
+    margin: 0 auto;
+    padding-bottom: 97px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .container {
+    max-width: 940px;
+    margin: 0 calc(4.42% + 0.07px);
+    padding-bottom: 54px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 700px;
+    margin: 0 6.25%;
+    padding-bottom: 34px;
+  }
+}
+
+@media screen and (max-width: 319px) {
+  .container {
+    max-width: 280px;
+    margin: 0 20px;
+  }
+}
