@@ -1,0 +1,82 @@
+@import './src/styles/_variables';
+
+.PaginationPage {
+  width: 41px;
+  height: 41px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+  border: 1px solid black;
+  border-right: none;
+  color: $main-color-dark;
+  background: inherit;
+  font-family: $font-family;
+  font-weight: $font-weight-medium;
+  font-size: $fonr-size-medium;
+
+  &:first-of-type {
+    border-radius: 8px 0 0 8px;
+    cursor: pointer;
+  }
+  &:last-child {
+    border-radius: 0 8px 8px 0;
+    border-right: 1px solid;
+    cursor: pointer;
+  }
+  &:only-child {
+    border-radius: 8px;
+  }
+  &:hover {
+    background: #ededed;
+    color: $main-color-dark;
+    border-color: $main-color-dark;
+  }
+  &:disabled {
+    border-color: #b3b3b3;
+    color: #b3b3b3;
+
+    &:hover {
+      cursor: auto;
+      background: inherit;
+    }
+  }
+  &--dark {
+    border: 1px solid white;
+    color: $main-color-light;
+    border-right: none;
+
+    &:hover {
+      background: #464646;
+      color: $main-color-light;
+      border-color: $main-color-light;
+    }
+    &:disabled {
+      border-color: #4c4c4c;
+      color: #4c4c4c;
+    }
+  }
+  &.PaginationPageWithActive {
+    background: $main-color-dark;
+    color: $main-color-light;
+    border-color: $main-color-dark;
+
+    &:hover {
+      cursor: auto;
+      background: $main-color-dark;
+      color: $main-color-light;
+      border-color: $main-color-dark;
+    }
+    &--dark {
+      background: $main-color-light;
+      color: $main-color-dark;
+      border-color: $main-color-light;
+      &:hover {
+        background: $main-color-light;
+        color: $main-color-dark;
+        border-color: $main-color-light;
+      }
+    }
+  }
+}
