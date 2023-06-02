@@ -1,0 +1,85 @@
+@import './src/styles/_variables';
+
+.card {
+  cursor: pointer;
+  position: relative;
+  border-radius: $border-radius-main;
+  overflow: hidden;
+  box-sizing: border-box;
+  max-width: 700px;
+  max-height: 540px;
+  padding-top: calc(275 / 360 * 100%);
+
+  .image {
+    border-radius: $border-radius-main;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .cardInfo {
+    box-sizing: border-box;
+    width: 100%;
+    height: 145px;
+    padding: 0 15px;
+    bottom: -115px;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.75);
+    font-weight: $font-weight-normal;
+    font-size: $font-size-normal;
+    line-height: 20px;
+    transition: all cubic-bezier(0.22, 0.61, 0.36, 1) 0.3s;
+
+    .title {
+      font-weight: $font-weight-bold;
+      font-size: $fonts-size-big;
+      margin: 5px 0;
+    }
+
+    .subtitle {
+      font-weight: $font-weight-bold;
+    }
+    p {
+      margin-block-start: 0.4em;
+      margin-block-end: 0.4em;
+    }
+  }
+}
+
+.card:hover .cardInfo {
+  bottom: 0px;
+}
+
+@media screen and (max-width: 1365px) {
+  .card {
+    padding-top: calc(230 / 300 * 100%);
+    .image {
+      height: 100%;
+    }
+  }
+}
+@media screen and (max-width: 1023px) {
+  .card {
+    padding-top: calc(250 / 340 * 100%);
+    .image {
+      height: calc(100% - 1px);
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .card {
+    .image {
+      height: calc(100% - 0.86px);
+    }
+  }
+}
+.placeholder {
+  position: relative;
+  padding: 30px;
+  bottom: 150px;
+  background-color: $additional-color;
+  border-radius: $border-radius-main;
+}
