@@ -47,6 +47,13 @@
       margin-block-end: 0.4em;
     }
   }
+  .placeholder {
+    position: absolute;
+    padding: 30px;
+    bottom: 110px;
+    background-color: $additional-color;
+    border-radius: $border-radius-main;
+  }
 }
 
 .card:hover .cardInfo {
@@ -75,11 +82,4 @@
       height: calc(100% - 0.86px);
     }
   }
-}
-.placeholder {
-  position: relative;
-  padding: 30px;
-  bottom: 150px;
-  background-color: $additional-color;
-  border-radius: $border-radius-main;
 }
