@@ -7,8 +7,10 @@
       "@styles/*": ["src/styles/*"],
       "@utils/*": ["src/utils/*"],
       "@App/*": ["src/App/*"],
-      "@pages/*": ["src/App/pages/*"],
-      "@models/*": ["src/store/models/*"]
+      "@models/*": ["src/store/models/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@icons/*": ["src/assets/icons/*"],
+      "@store/*": ["src/store/*"]
     }
   }
 }
