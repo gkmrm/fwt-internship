@@ -26,7 +26,7 @@ export type InputProps = Omit<
    * Displayed placeholder when there is no value
    */
   placeholder: string;
-  disabled: boolean;
+  disabled?: boolean;
 };
 
 const Input: React.FC<InputProps> = ({
