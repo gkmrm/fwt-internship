@@ -27,7 +27,7 @@ export interface ISelect {
   /**
    * Specify whether the control is disabled
    */
-  disabled: boolean;
+  disabled?: boolean;
   /**
    * Provide the contents of your Select
    */
