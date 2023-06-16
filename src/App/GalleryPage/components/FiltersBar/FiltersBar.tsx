@@ -60,13 +60,11 @@ const FiltersBar: React.FC<IFilterBarProps> = ({ store }) => {
       <Input
         placeholder={'Name'}
         onChange={debounceSearchQuery}
-        disabled={false}
         className={
           isDarkTheme ? `${styles[`queryInput--dark`]}` : styles.queryInput
         }
       />
       <DropDown
-        disabled={false}
         options={store.authors}
         value={store.author}
         placeholder={'Authors'}
@@ -74,7 +72,6 @@ const FiltersBar: React.FC<IFilterBarProps> = ({ store }) => {
         onHandleReset={onHandleResetAuthors}
       />
       <DropDown
-        disabled={false}
         options={store.locations}
         value={store.location}
         placeholder={'Locations'}
@@ -89,7 +86,6 @@ const FiltersBar: React.FC<IFilterBarProps> = ({ store }) => {
             className={
               isDarkTheme ? `${styles[`inputRange--dark`]}` : styles.inputRange
             }
-            disabled={false}
           />
           <img
             src={theme === 'light' ? dashForRange : dashForRangeDark}
@@ -101,7 +97,6 @@ const FiltersBar: React.FC<IFilterBarProps> = ({ store }) => {
             className={
               isDarkTheme ? `${styles[`inputRange--dark`]}` : styles.inputRange
             }
-            disabled={false}
           />
         </div>
       </Range>
